@@ -1,0 +1,18 @@
+(ns Solution
+  (:gen-class))
+
+; Auto-generated code below aims at helping you parse
+; the standard input according to the problem statement.
+
+(defn -main [& args]
+  (let [N (read)]
+    (loop [i N]
+      (when (> i 0)
+        (let [ISBN (read-line)]
+        (recur (dec i)))))
+    
+    ; (binding [*out* *err*]
+    ;   (println "Debug messages..."))
+    
+    ; Write answer to stdout
+    (println "answer")))
